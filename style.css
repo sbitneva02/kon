@@ -1,0 +1,58 @@
+body {
+    height: 100%;
+    font-family:monospace ;
+    font-size: 120%;
+    color: beige;
+    background-color: bisque;
+
+}
+
+a:visited {color: aqua;}
+a:hover {color: aquamarine;}
+
+
+ol {
+    list-style-type: upper-roman;
+}
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+ol li:before {
+    counter-increment: li;
+    content: counters(li, ".")". ";
+}
+
+body.table {
+    color: black;
+    background-color: white;
+}
+
+table {
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-collapse: collapse;
+    width: 500px;
+    table-layout: fixed
+;
+}
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+table.inlain {
+    width: 100%;
+    font-size: 50%;
+}
+
+caption {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.img {
+    text-align: center;
+}
